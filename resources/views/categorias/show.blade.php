@@ -1,10 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight text-center text-white">
-            {{ $categoria->nome }}
-        </h2>
+        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight text-center text-white">{{ $categoria->nome }}</h2>
     </x-slot>
-
     @if(count($pdfs) >= 1)
         <div class="py-12">
             <div class="max-w-12xl mx-auto sm:px-6 lg:px-8">
@@ -12,9 +9,9 @@
                     <div class="p-6 text-gray-900 dark:text-gray-100">
                         <h3 class="text-lg font-semibold mb-4">Categoria {{ $categoria->nome }} <small>Os PDF aqui servem como referencia.</small> </h3>
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+
                             @foreach($pdfs as $pdf)
                                 <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-
                                     <div class="p-5">
                                         <a href="#">
                                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ $pdf->titulo }}</h5>
@@ -37,12 +34,11 @@
                                     </div>
                                 </div>
                             @endforeach
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     @endif
-
 </x-app-layout>
