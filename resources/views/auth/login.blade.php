@@ -29,8 +29,19 @@
                     <x-input-error :messages="$errors->get('password')" class="mt-2" />
                 </div>
 
-                <button type="submit" class="bg-white focus:outline-none font-medium mt-2 text-sm w-full px-5 py-2.5 text-center focus:border-transparent focus:ring-0 focus:outline-none rounded-lg text-purple-900">Avançar</button>
+                <button type="submit" class="bg-white focus:outline-none font-medium mt-2 text-2xl w-full px-5 py-2.5 text-center focus:border-transparent focus:ring-0 focus:outline-none rounded-lg text-gray-950">Logar-se</button>
             </form>
+
+            <div class="flex justify-end mt-2 items-center">
+                <span>Não é cadastrado, &nbsp;&nbsp;</span>
+                <a href="{{route('register')}}" class="bg-blue-500 text-white p-2 rounded-lg"> Cadastra-se</a>
+            </div>
+
+
+
+
+
+
         </div>
 
         <script>

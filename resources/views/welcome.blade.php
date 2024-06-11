@@ -54,9 +54,6 @@
     </nav>
 </header>
 
-
-
-
 <!-- Hero Section -->
 <main class="text-white flex items-center justify-around h-screen w-full px-5 lg:px-52" id="hero">
     <div class="flex flex-col-reverse lg:flex-row items-center h-full w-full">
@@ -71,7 +68,7 @@
                 e também para ajudar nos estudos para concursos públicos.
             </p>
             <p class="flex text-center justify-center mb-4 lg:mb-0">
-                <a href="#precos" class="header-link bg-white text-white flex rounded-full text-sm lg:text-lg font-semibold bg-red-800 lg:px-10 p-2 lg:px-20">Assine Já! Somente R$ 9,99 mensais</a>
+                <a href="{{route('subscribe')}}" class="header-link bg-white text-white flex rounded-full text-sm lg:text-lg font-semibold bg-red-800 lg:px-10 p-2 lg:px-20">Assine Já! Somente R$ 9,99 mensais</a>
             </p>
         </div>
         <div class="lg:flex lg:h-full lg:w-2/3 lg:justify-end">
@@ -150,7 +147,7 @@
 
             </div>
             <p class="w-50 text-center my-5 sm:px-3">
-                <a href="#precos" class="header-link bg-white text-white flex rounded-full text-sm lg:text-lg font-semibold bg-red-800 lg:px-10 p-2 lg:px-20">Assine Já! Somente R$ 9,99 mensais</a>
+                <a href="{{route('subscribe')}}" class="header-link bg-white text-white flex rounded-full text-sm lg:text-lg font-semibold bg-red-800 lg:px-10 p-2 lg:px-20">Assine Já! Somente R$ 9,99 mensais</a>
             </p>
             <div class="flex flex-wrap justify-around mt-5 w-full">
                 <!-- Testimonial items here -->
@@ -263,7 +260,7 @@
         </div>
     </div>
     <div class="w-full flex justify-center mt-5">
-        <a href="#precos" class="header-link bg-white text-white flex rounded-full mb-20 text-sm lg:text-lg font-semibold bg-red-800 lg:px-10 p-2 lg:px-20">Assine Já! Somente R$ 9,99 mensais</a>
+        <a href="{{ route('subscribe') }}" class="header-link bg-white text-white flex rounded-full mb-20 text-sm lg:text-lg font-semibold bg-red-800 lg:px-10 p-2 lg:px-20">Assine Já! Somente R$ 9,99 mensais</a>
     </div>
 </section>
 

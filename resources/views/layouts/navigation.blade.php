@@ -24,7 +24,7 @@
                     </x-nav-link>
                 </div>
 
-                <a :href="route('subscribe')" style="margin-left:20px;text-color:white;display:flex;align-items: center;">
+                <a href="{{route('subscribe')}}" style="margin-left:20px;text-color:white;display:flex;align-items: center;">
                     <span style="border:1px solid black;padding:0 10px;border-radius: 5px;background-color:#123449;color:white;">Assinatura</span>
                 </a>
 
