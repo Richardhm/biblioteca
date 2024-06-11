@@ -14,6 +14,10 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            width: {
+                '30p': '30%',
+                '70p': '70%', // Adicione esta linha para a largura de 70%
+            },
         },
     },
 
