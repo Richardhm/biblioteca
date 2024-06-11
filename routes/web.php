@@ -9,7 +9,7 @@ use App\Http\Controllers\SubscribeController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get("/configuracao",function(){
     return view('configuracao');

@@ -39,16 +39,16 @@
 <body class="text-gray-900 sm:flex sm:flex-col">
 
 <header class="flex items-center w-full justify-between box-border">
-    <div class="bg-red-600 flex p-10 box-border">
-        <img src="{{asset('logo.png')}}" alt="Pesquisas Academicas" style="width:50%;height:30%;">
+    <div class="flex p-10 box-border">
+        <img src="{{asset('logo.png')}}" alt="Pesquisas Academicas" class="lg:w-2/4 lg:w-1/3">
     </div>
     <nav>
         <ul class="flex box-border">
             <li class="">
-                <a class="text-2xl text-white" href="#">Inicio</a>
+                <a class="text-2xl text-white" href="{{route('welcome')}}">Inicio</a>
             </li>
             <li class="mx-5">
-                <a class="text-2xl text-white" href="#">Login</a>
+                <a class="text-2xl text-white" href="{{route('login')}}">Login</a>
             </li>
         </ul>
     </nav>
@@ -64,14 +64,14 @@
             <h5 class="text-2xl lg:text-6xl font-bold mb-1 lg:mb-4">
                 Pesquisas Acadêmicas
             </h5>
-            <p class="header-descricao text-lg lg:text-2xl my-5 text-justify lg:text-left">
+            <p class="header-descricao lg:text-2xl lg:my-10 my-5 text-justify">
                 Encontre pesquisas acadêmicas e escolares em diversos
                 temas e assuntos para auxiliá-lo na finalização do seu
                 TCC, trabalhos de faculdade, pós-graduação, ensino médio
                 e também para ajudar nos estudos para concursos públicos.
             </p>
             <p class="flex text-center justify-center mb-4 lg:mb-0">
-                <a href="#precos" class="header-link bg-white text-white flex rounded-full text-sm font-semibold bg-red-800 lg:px-10 p-2 lg:px-20">Assine Já! Somente R$ 9,99 mensais</a>
+                <a href="#precos" class="header-link bg-white text-white flex rounded-full text-sm lg:text-lg font-semibold bg-red-800 lg:px-10 p-2 lg:px-20">Assine Já! Somente R$ 9,99 mensais</a>
             </p>
         </div>
         <div class="lg:flex lg:h-full lg:w-2/3 lg:justify-end">
@@ -84,8 +84,8 @@
 <!-- Sobre Nós -->
 <section id="funciona" class="flex items-center justify-center h-screen lg:px-5 lg:py-20 w-full">
     <div class="max-w-7xl mx-auto text-center">
-        <h2 class="text-4xl lg:text-7xl font-bold mb-10 text-white">Sobre Nós</h2>
-        <p class="text-lg lg:text-3xl lg:my-20 lg:px-48 text-white text-justify px-4">
+        <h2 class="lg:text-6xl font-bold text-white text-2xl">Sobre Nós</h2>
+        <p class="text-lg lg:text-2xl lg:my-20 lg:px-48 text-white text-justify px-4">
             Bem-vindo ao Pesquisas Acadêmicas, o seu site de referência para pesquisas acadêmicas e escolares. Oferecemos uma ampla variedade de temas
             e assuntos comumente solicitados em faculdades, pós-graduação, escolas de ensino médio e concursos públicos.
         </p>
@@ -96,9 +96,8 @@
 </section>
 <!-- Fim Sobre Nós -->
 
-
 <section id="categorias" class="flex flex-col items-center mt-3 sm:py-20 lg:px-2 lg:py-20 mb-20 w-full">
-    <h2 class="lg:text-7xl font-bold text-white mb-16 text-center text-2xl">Exemplos de Categorias de Pesquisa</h2>
+    <h2 class="lg:text-6xl font-bold text-white mb-16 text-center text-2xl">Exemplos de Categorias de Pesquisa</h2>
     <div class="flex flex-wrap justify-center items-center w-full">
         <div class="flex flex-wrap justify-center w-full lg:w-11/12 sm:full">
             <div class="w-full flex flex-wrap mb-5 justify-center">
@@ -151,7 +150,7 @@
 
             </div>
             <p class="w-50 text-center my-5 sm:px-3">
-                <a href="#precos" class="header-link bg-white text-white flex rounded-full text-sm font-semibold bg-red-800 lg:px-10 p-2 lg:px-20">Assine Já! Somente R$ 9,99 mensais</a>
+                <a href="#precos" class="header-link bg-white text-white flex rounded-full text-sm lg:text-lg font-semibold bg-red-800 lg:px-10 p-2 lg:px-20">Assine Já! Somente R$ 9,99 mensais</a>
             </p>
             <div class="flex flex-wrap justify-around mt-5 w-full">
                 <!-- Testimonial items here -->
@@ -178,23 +177,11 @@
 </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Pesquisas Acadêmicas Online -->
-<section id="vantagens" class="flex lg: flex-wrap lg:px-5 sm:py-20 lg:mt-20 lg:h-screen w-full">
-    <h3 class="lg:text-4xl text-white font-bold text-center justify-center w-full flex">Pesquisas Acadêmicas Online</h3>
+<section id="vantagens" class="flex items-start lg:flex-wrap flex-wrap w-full">
+    <h3 class="lg:text-6xl text-white font-bold text-center justify-center w-full flex flex-wrap self-start">Pesquisas Acadêmicas Online</h3>
 
-    <div class="flex flex-wrap w-full">
+    <div class="flex flex-wrap w-full lg:py-60">
 
         <div class="flex flex-wrap sm:w-full text-center p-5 lg:w-4/12 lg:px-8">
             <h4 class="font-bold mb-6 text-white w-full lg:text-4xl">Temas Variados Disponíveis</h4>
@@ -229,9 +216,9 @@
 
 
 
-<section id="contato" class="flex justify-center lg:py-20 sm:w-full">
+<section id="contato" class="flex justify-center lg:py-20 sm:w-full lg:px-96">
     <div class="flex flex-wrap w-full">
-        <h2 class="lg:text-4xl text-2xl font-bold text-center text-white sm:w-full mx-auto">Entre em Contato</h2>
+        <h2 class="lg:text-6xl text-2xl font-bold text-center text-white sm:w-full mx-auto">Entre em Contato</h2>
         <p class="text-center my-6 text-white sm:w-full">Estamos aqui para ajudar com suas pesquisas acadêmicas</p>
         <p class="text-center text-white mx-auto sm:w-full">vendas.bmsys@gmail.com</p>
 
@@ -251,8 +238,8 @@
 </section>
 
 <!-- Projetos de Pesquisa Escolar -->
-<section id="pesquisa" class="flex flex-col items-center lg:py-10 h-screen lg:px-5 w-full">
-    <h2 class="text-2xl lg:text-4xl font-bold lg:mt-6 text-center mb-6 text-white">Projetos de Pesquisa Escolar</h2>
+<section id="pesquisa" class="flex flex-col items-center lg:py-10 mb-10 py-10 lg:px-5 w-full">
+    <h2 class="text-2xl lg:text-6xl font-bold lg:mt-6 text-center mb-6 text-white">Projetos de Pesquisa Escolar</h2>
     <div class="flex flex-wrap justify-center w-full">
         <div class="flex flex-wrap w-full lg:w-1/2 justify-end">
             <div class="flex flex-col mb-8 justify-end">
@@ -276,9 +263,70 @@
         </div>
     </div>
     <div class="w-full flex justify-center mt-5">
-        <a href="#precos" class="header-link bg-white text-white flex rounded-full text-sm font-semibold bg-red-800 lg:px-10 p-2 lg:px-20">Assine Já! Somente R$ 9,99 mensais</a>
+        <a href="#precos" class="header-link bg-white text-white flex rounded-full mb-20 text-sm lg:text-lg font-semibold bg-red-800 lg:px-10 p-2 lg:px-20">Assine Já! Somente R$ 9,99 mensais</a>
     </div>
 </section>
+
+<footer class="flex w-full flex-wrap mt-30 justify-around items-center">
+
+        <div>
+            <div class="footer-widget">
+                <ul class="links">
+                    <li><a href="javascript:void(0)" class="text-white">Home</a></li>
+                    <li><a href="javascript:void(0)" class="text-white">Categorias</a></li>
+                    <li><a href="javascript:void(0)" class="text-white">Sobre</a></li>
+                    <li><a href="javascript:void(0)" class="text-white">Testimonials</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <div class="footer-widget">
+                <ul class="links">
+                    <li><a href="javascript:void(0)" class="text-white">How it works</a></li>
+                    <li><a href="javascript:void(0)" class="text-white">Privacy policy</a></li>
+                    <li><a href="javascript:void(0)" class="text-white">Terms of service</a></li>
+                    <li><a href="javascript:void(0)" class="text-white">Refund policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+    <div>
+        <div class="mb-30">
+            <a href="{{route('welcome')}}">
+                <img src="{{asset('logo.png')}}" alt="" />
+            </a>
+        </div>
+        <p class="desc mb-30 text-white text-center">
+            Todos os direitos reservados a BmSys Tecnologia
+        </p>
+        <ul class="socials">
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="lni lni-facebook-filled"></i>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="lni lni-twitter-filled"></i>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="lni lni-instagram-filled"></i>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="lni lni-linkedin-original"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+</footer>
+
 
 
 
