@@ -55,7 +55,7 @@
 </header>
 
 <!-- Hero Section -->
-<main class="text-white flex items-center justify-around h-screen w-full px-5 lg:px-52" id="hero">
+<main class="text-white flex items-center justify-around lg:h-screen w-full px-5 lg:px-52" id="hero">
     <div class="flex flex-col-reverse lg:flex-row items-center h-full w-full">
         <div class="flex flex-col w-full lg:w-1/3 mb-5 lg:mb-0">
             <h5 class="text-2xl lg:text-6xl font-bold mb-1 lg:mb-4">
