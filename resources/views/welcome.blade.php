@@ -11,7 +11,7 @@
         @media (max-width: 640px) {
             #categorias .content_categorias_image {width: 40%;margin-right: 1%;}
             #categorias .content_categorias_image img {width:100%;}
-            .imagem-header {margin-top: 100px;}
+            .imagem-header {margin-top:1080px;width:90% !important;}
         }
 
         /*section {*/
@@ -132,7 +132,7 @@
 
             </div>
             <p class="w-50 text-center my-5 sm:px-3">
-                <a href="#precos" class="bg-red-800 text-white w-50 flex p-2 rounded-full lg:text-lg font-semibold sm:px-10 lg:px-20 lg:py-5 justify-center text-sm">Assine Já! Somente R$ 9,99 mensais</a>
+                <a href="#precos" class="header-link bg-white text-white flex rounded-full text-sm font-semibold bg-red-800 lg:px-10 p-2 lg:px-20">Assine Já! Somente R$ 9,99 mensais</a>
             </p>
             <div class="flex flex-wrap justify-around mt-5 w-full">
                 <!-- Testimonial items here -->
@@ -210,7 +210,7 @@
 
 
 
-<section id="contato" class="flex justify-center lg:py-20 w-full">
+<section id="contato" class="flex justify-center lg:py-20 sm:w-full">
     <div class="flex flex-wrap w-full">
         <h2 class="lg:text-4xl text-2xl font-bold text-center text-white sm:w-full mx-auto">Entre em Contato</h2>
         <p class="text-center my-6 text-white sm:w-full">Estamos aqui para ajudar com suas pesquisas acadêmicas</p>
@@ -219,11 +219,11 @@
         <form action="" method="POST" class="flex flex-wrap sm:w-full lg:w-full w-10/12 mx-auto">
             @csrf
             <div class="mb-4 w-full">
-                <label for="email" class="block font-medium text-white">Email</label>
+                <label for="email" class="block font-medium text-white">Email:</label>
                 <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
             </div>
             <div class="mb-4 w-full">
-                <label for="message" class="block font-medium text-white">Mensagem</label>
+                <label for="message" class="block font-medium text-white">Mensagem:</label>
                 <textarea name="message" id="message" rows="4" class="mt-1 block w-full rounded-lg"></textarea>
             </div>
             <button type='submit' class='bg-blue-500 btn-block text-white px-4 py-2 rounded-lg w-full'>Enviar</button>
@@ -238,11 +238,11 @@
         <div class="flex flex-wrap w-full lg:w-1/2 justify-end">
             <div class="flex flex-col mb-8 justify-end">
                 <img alt="" src="{{asset('foto-g1.jpeg')}}" class="rounded-lg px-2 lg:w-2/3 sm:w-full h-full mb-4 flex self-end">
-                <p class="lg:text-3xl text-white lg:text-right sm:text-center sm:w-full">Site de Pesquisas Acadêmicas</p>
+                <p class="lg:text-3xl text-white lg:text-right sm:text-center sm:w-full ml-2 lg:ml-0">Site de Pesquisas Acadêmicas</p>
             </div>
             <div class="flex flex-col mb-8 justify-end">
-                <img alt="" src="{{asset('foto-g2.jpeg')}}" class="rounded-lg lg:w-1/2 sm:w-full h-full mb-4 flex self-end">
-                <p class="lg:text-3xl text-white lg:text-right sm:text-center sm:w-full">Exemplo de Projeto de Pesquisa</p>
+                <img alt="" src="{{asset('foto-g2.jpeg')}}" class="rounded-lg px-2 lg:w-1/2 sm:w-full h-full mb-4 flex self-end">
+                <p class="lg:text-3xl text-white lg:text-right sm:text-center sm:w-full ml-2 lg:ml-0">Exemplo de Projeto de Pesquisa</p>
             </div>
         </div>
         <div class="flex flex-wrap w-full lg:w-1/2">
@@ -257,7 +257,7 @@
         </div>
     </div>
     <div class="w-full flex justify-center mt-5">
-        <a href="#" class="bg-red-800 text-white text-lg lg:text-2xl flex lg:px-10 px-2 rounded-lg justify-center">Assine Já! Somente R$ 9,99 mensais</a>
+        <a href="#precos" class="header-link bg-white text-white flex rounded-full text-sm font-semibold bg-red-800 lg:px-10 p-2 lg:px-20">Assine Já! Somente R$ 9,99 mensais</a>
     </div>
 </section>
 
