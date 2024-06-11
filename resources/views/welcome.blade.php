@@ -11,7 +11,7 @@
         @media (max-width: 640px) {
             #categorias .content_categorias_image {width: 40%;margin-right: 1%;}
             #categorias .content_categorias_image img {width:100%;}
-            .imagem-header {margin-top:1080px;width:90% !important;}
+
         }
 
         /*section {*/
@@ -38,8 +38,27 @@
 </head>
 <body class="text-gray-900 sm:flex sm:flex-col">
 
+<header class="flex items-center w-full justify-between box-border">
+    <div class="bg-red-600 flex p-10 box-border">
+        <img src="{{asset('logo.png')}}" alt="Pesquisas Academicas" style="width:50%;height:30%;">
+    </div>
+    <nav>
+        <ul class="flex box-border">
+            <li class="">
+                <a class="text-2xl text-white" href="#">Inicio</a>
+            </li>
+            <li class="mx-5">
+                <a class="text-2xl text-white" href="#">Login</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
 <!-- Hero Section -->
-<header class="text-white flex items-center justify-around h-screen w-full px-5 lg:px-52" id="hero">
+<main class="text-white flex items-center justify-around h-screen w-full px-5 lg:px-52" id="hero">
     <div class="flex flex-col-reverse lg:flex-row items-center h-full w-full">
         <div class="flex flex-col w-full lg:w-1/3 mb-5 lg:mb-0">
             <h5 class="text-2xl lg:text-6xl font-bold mb-1 lg:mb-4">
@@ -59,7 +78,7 @@
             <img alt="MacBook" src="{{asset('header.jpg')}}" class="imagem-header" />
         </div>
     </div>
-</header>
+</main>
 <!-- Fim Hero Section -->
 
 <!-- Sobre Nós -->
