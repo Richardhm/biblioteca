@@ -163,7 +163,7 @@
 <!-- Pesquisas Acadêmicas Online -->
 <section id="vantagens" class="flex items-start lg:flex-wrap flex-wrap w-full">
     <h3 class="lg:text-6xl text-white font-bold text-center justify-center w-full flex flex-wrap self-start">Pesquisas Acadêmicas Online</h3>
-    <div class="flex flex-wrap w-full lg:py-60">
+    <div class="flex flex-wrap w-full lg:py-40">
         <div class="flex flex-wrap sm:w-full text-center p-5 lg:w-4/12 lg:px-8">
             <h4 class="font-bold mb-6 text-white w-full lg:text-4xl">Temas Variados Disponíveis</h4>
             <p class="text-white text-justify w-full lg:text-2xl">
@@ -222,11 +222,11 @@
 
 <section id="contato" class="flex justify-center lg:py-20 mx-auto w-11/12 lg:mx-0 lg:px-96 mb-10 lg:mb-0">
     <div class="flex flex-wrap w-full">
-        <h2 class="lg:text-6xl text-2xl font-bold text-center text-white sm:w-full mx-auto">Entre em Contato</h2>
+        <h2 class="lg:text-4xl text-2xl font-bold text-center text-white sm:w-full mx-auto">Entre em Contato</h2>
         <p class="text-center my-6 text-white sm:w-full">Estamos aqui para ajudar com suas pesquisas acadêmicas</p>
         <p class="text-center text-white mx-auto sm:w-full">vendas.bmsys@gmail.com</p>
 
-        <form action="" method="POST" class="flex flex-wrap sm:w-full lg:w-8/12  mx-auto">
+        <form action="" method="POST" class="flex flex-wrap sm:w-full lg:w-8/12 mx-auto">
             @csrf
             <div class="mb-4 w-full">
                 <label for="email" class="block font-medium text-white">Email:</label>
