@@ -40,15 +40,15 @@
 
 <header class="flex items-center w-full justify-between box-border bg-white">
     <div class="flex box-border">
-        <img src="{{asset('logo.png')}}" alt="Pesquisas Academicas" class="lg:w-2/4 lg:w-1/3">
+        <img src="{{asset('logo.png')}}" alt="Pesquisas Academicas" class="lg:w-2/4 lg:w-1/3 lg:p-0 p-4">
     </div>
     <nav>
         <ul class="flex box-border">
             <li class="">
-                <a class="text-2xl text-gray-950" href="{{route('welcome')}}">Inicio</a>
+                <a class="lg:text-2xl text-lg text-gray-950" href="{{route('welcome')}}">Inicio</a>
             </li>
             <li class="mx-5">
-                <a class="text-2xl text-gray-950" href="{{route('login')}}">Login</a>
+                <a class="lg:text-2xl text-lg text-gray-950" href="{{route('login')}}">Login</a>
             </li>
         </ul>
     </nav>
@@ -246,10 +246,10 @@
         <div>
             <div class="footer-widget">
                 <ul class="links">
-                    <li><a href="javascript:void(0)" class="text-gray-950 text-2xl">Home</a></li>
-                    <li><a href="javascript:void(0)" class="text-gray-950 text-2xl">Categorias</a></li>
-                    <li><a href="javascript:void(0)" class="text-gray-950 text-2xl">Sobre</a></li>
-                    <li><a href="javascript:void(0)" class="text-gray-950 text-2xl">Testimonials</a></li>
+                    <li><a href="javascript:void(0)" class="text-gray-950 lg:text-2xl text-lg">Home</a></li>
+                    <li><a href="javascript:void(0)" class="text-gray-950 lg:text-2xl text-lg">Categorias</a></li>
+                    <li><a href="javascript:void(0)" class="text-gray-950 lg:text-2xl text-lg">Sobre</a></li>
+                    <li><a href="javascript:void(0)" class="text-gray-950 lg:text-2xl text-lg">Testimonials</a></li>
                 </ul>
             </div>
         </div>
@@ -259,7 +259,7 @@
     <div>
         <div class="mb-30">
             <a href="{{route('welcome')}}">
-                <img src="{{asset('logo.png')}}" alt="" />
+                <img src="{{asset('logo.png')}}" alt="" class="p-4 lg:p-0" />
             </a>
         </div>
         <p class="desc mb-30 text-white text-center">
