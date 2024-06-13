@@ -3,17 +3,17 @@
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
     <section class="flex w-full justify-center items-center">
-        <div class="p-5 text-white rounded-lg" style="width:380px;background-color:#2d3748;">
-            <h3 class="text-lg font-bold mb-5" style="color:#FFF;font-family: 'Nunito Sans';font-size:2em;">Olá!</h3>
+        <div class="p-5 text-white rounded-lg bg-gray-100" style="width:380px;">
+            <h3 class="text-lg font-bold text-gray-950 my-5" style="font-family: 'Nunito Sans';font-size:2em;">Olá!</h3>
             <form method="POST" action="{{ route('login') }}">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                 <div class="mb-2">
-                    <label for="email" class="block mb-1 font-medium text-white dark:text-white text-lg">Email</label>
+                    <label for="email" class="block mb-1 font-medium text-gray-950 dark:text-white text-lg">Email</label>
                     <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-950 text-sm block w-full p-2.5 focus:border-transparent focus:ring-0 focus:outline-none rounded-lg" required />
                     <x-input-error :messages="$errors->get('email')" class="mt-2" />
                 </div>
                 <div class="mb-2">
-                    <label for="password" class="block mb-1 font-medium text-white dark:text-white text-lg">Senha</label>
+                    <label for="password" class="block mb-1 font-medium dark:text-white text-lg text-gray-950">Senha</label>
                     <div class="relative">
                         <input type="password" name="password" id="password" class="bg-gray-50 border text-gray-950 border-gray-300 text-sm block w-full p-2.5 focus:border-transparent focus:ring-0 focus:outline-none rounded-lg" required />
                         <button type="button" id="togglePassword" class="absolute right-2 top-2 text-gray-950 cursor-pointer">
@@ -33,7 +33,7 @@
             </form>
 
             <div class="flex justify-end mt-2 items-center">
-                <span>Não é cadastrado, &nbsp;&nbsp;</span>
+                <span class="text-gray-950">Não é cadastrado &nbsp;</span>
                 <a href="{{route('register')}}" class="bg-blue-500 text-white p-2 rounded-lg"> Cadastra-se</a>
             </div>
 

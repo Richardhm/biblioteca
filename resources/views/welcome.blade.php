@@ -38,17 +38,17 @@
 </head>
 <body class="text-gray-900 sm:flex sm:flex-col">
 
-<header class="flex items-center w-full justify-between box-border">
-    <div class="flex p-10 box-border">
+<header class="flex items-center w-full justify-between box-border bg-white">
+    <div class="flex box-border">
         <img src="{{asset('logo.png')}}" alt="Pesquisas Academicas" class="lg:w-2/4 lg:w-1/3">
     </div>
     <nav>
         <ul class="flex box-border">
             <li class="">
-                <a class="text-2xl text-white" href="{{route('welcome')}}">Inicio</a>
+                <a class="text-2xl text-gray-950" href="{{route('welcome')}}">Inicio</a>
             </li>
             <li class="mx-5">
-                <a class="text-2xl text-white" href="{{route('login')}}">Login</a>
+                <a class="text-2xl text-gray-950" href="{{route('login')}}">Login</a>
             </li>
         </ul>
     </nav>
@@ -71,77 +71,63 @@
                 <a href="{{route('subscribe')}}" class="header-link bg-white text-white flex rounded-full text-sm lg:text-lg font-semibold bg-red-800 lg:px-10 p-2 lg:px-20">Assine Já! Somente R$ 9,99 mensais</a>
             </p>
         </div>
-        <div class="lg:flex lg:h-full lg:w-2/3 lg:justify-end">
+        <div class="lg:flex lg:h-2/3 lg:w-2/3 lg:justify-end">
             <img alt="MacBook" src="{{asset('header.jpg')}}" class="imagem-header" />
         </div>
     </div>
 </main>
 <!-- Fim Hero Section -->
 
-<!-- Sobre Nós -->
-<section id="funciona" class="flex items-center justify-center h-screen lg:px-5 lg:py-20 w-full">
-    <div class="max-w-7xl mx-auto text-center">
-        <h2 class="lg:text-6xl font-bold text-white text-2xl">Sobre Nós</h2>
-        <p class="text-lg lg:text-2xl lg:my-20 lg:px-48 text-white text-justify px-4">
-            Bem-vindo ao Pesquisas Acadêmicas, o seu site de referência para pesquisas acadêmicas e escolares. Oferecemos uma ampla variedade de temas
-            e assuntos comumente solicitados em faculdades, pós-graduação, escolas de ensino médio e concursos públicos.
-        </p>
-        <div class="text-center flex justify-center lg:px-0 px-3">
-            <img alt="" src="{{asset('sobre-nos.png')}}" class="rounded-2xl lg:w-3/4 sm:w-3/4">
-        </div>
-    </div>
-</section>
-<!-- Fim Sobre Nós -->
+
 
 <section id="categorias" class="flex flex-col items-center mt-3 sm:py-20 lg:px-2 lg:py-20 mb-20 w-full">
     <h2 class="lg:text-6xl font-bold text-white mb-16 text-center text-2xl">Exemplos de Categorias de Pesquisa</h2>
     <div class="flex flex-wrap justify-center items-center w-full">
         <div class="flex flex-wrap justify-center w-full lg:w-11/12 sm:full">
             <div class="w-full flex flex-wrap mb-5 justify-center">
-                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image">
+                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image mx-1">
                     <img alt="" src="{{asset('livro-arquitetura.png')}}" class="rounded-lg w-full h-full">
                 </div>
-                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image">
+                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image mx-1">
                     <img alt="" src="{{asset('livro-politica.png')}}" class="rounded-lg w-full h-full">
                 </div>
-                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image">
+                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image mx-1">
                     <img alt="" src="{{asset('livro-cinema.png')}}" class="rounded-lg w-full h-full">
                 </div>
-                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image">
+                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image mx-1">
                     <img alt="" src="{{asset('livro-economia.png')}}" class="rounded-lg w-full h-full">
                 </div>
-                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image">
+                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image mx-1">
                     <img alt="" src="{{asset('livro-politica.png')}}" class="rounded-lg w-full h-full">
                 </div>
-                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image">
+                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image mx-1">
                     <img alt="" src="{{asset('livro-educaaao.png')}}" class="rounded-lg w-full h-full">
                 </div>
-                <div class="lg:flex mb-4 lg:w-1/12 hidden content_categorias_image ">
+                <div class="lg:flex mb-4 lg:w-1/12 hidden content_categorias_image mx-1">
                     <img alt="" src="{{asset('livro-finanassas.png')}}" class="rounded-lg w-full h-full">
                 </div>
 
             </div>
             <div class="w-full flex flex-wrap mb-5 justify-center">
-
-                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image">
+                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image mx-1">
                     <img alt="" src="{{asset('livro-meio-ambiente.png')}}" class="rounded-lg w-full h-full">
                 </div>
-                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image">
+                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image mx-1">
                     <img alt="" src="{{asset('livro-marketing.png')}}" class="rounded-lg w-full h-full">
                 </div>
-                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image">
+                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image mx-1">
                     <img alt="" src="{{asset('livro-sustentabilidade.png')}}" class="rounded-lg w-full h-full">
                 </div>
-                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image">
+                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image mx-1">
                     <img alt="" src="{{asset('livro-religiao.png')}}" class="rounded-lg w-full h-full">
                 </div>
-                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image">
+                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image mx-1">
                     <img alt="" src="{{asset('livro-medicina.png')}}" class="rounded-lg w-full h-full">
                 </div>
-                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image">
+                <div class="flex mb-4 lg:w-1/12 sm:w-1/2 content_categorias_image mx-1">
                     <img alt="" src="{{asset('livro-meio-ambiente.png')}}" class="rounded-lg w-full h-full">
                 </div>
-                <div class="lg:flex mb-4 lg:w-1/12 hidden content_categorias_image">
+                <div class="lg:flex mb-4 lg:w-1/12 hidden content_categorias_image mx-1">
                     <img alt="" src="{{asset('livro-tecnologia.png')}}" class="rounded-lg w-full h-full">
                 </div>
 
@@ -177,15 +163,16 @@
 <!-- Pesquisas Acadêmicas Online -->
 <section id="vantagens" class="flex items-start lg:flex-wrap flex-wrap w-full">
     <h3 class="lg:text-6xl text-white font-bold text-center justify-center w-full flex flex-wrap self-start">Pesquisas Acadêmicas Online</h3>
-
     <div class="flex flex-wrap w-full lg:py-60">
-
         <div class="flex flex-wrap sm:w-full text-center p-5 lg:w-4/12 lg:px-8">
             <h4 class="font-bold mb-6 text-white w-full lg:text-4xl">Temas Variados Disponíveis</h4>
             <p class="text-white text-justify w-full lg:text-2xl">
                 Explore nossa plataforma de pesquisas acadêmicas e escolares com uma ampla variedade de temas e assuntos para auxiliar
                 em seus trabalhos acadêmicos, concursos públicos e mais.
             </p>
+            <div class="mx-auto">
+                <img alt="" src="{{asset('foto-g1.jpeg')}}" class="rounded-lg px-2 lg:w-11/12 sm:w-full h-full mb-4 flex self-end">
+            </div>
         </div>
 
         <div class="flex flex-wrap sm:w-full text-center p-5 lg:w-4/12 lg:px-8">
@@ -194,21 +181,41 @@
                 Conte com nossa equipe especializada para auxiliá-lo em suas pesquisas acadêmicas, tirar dúvidas e
                 encontrar as melhores fontes de informação para seus trabalhos.
             </p>
+            <div class="mx-auto">
+                <img alt="" src="{{asset('foto-g2.jpeg')}}" class="rounded-lg px-2 lg:w-11/12 sm:w-full h-full mb-4 flex self-end">
+            </div>
         </div>
-
         <div class="flex flex-wrap sm:w-full text-center p-5 lg:w-4/12 lg:px-8">
             <h4 class="font-bold mb-6 text-white w-full lg:text-4xl">Facilidade de Navegação</h4>
             <p class="text-white text-justify w-full lg:text-2xl">
                 Navegue de forma simples e intuitiva em nosso site, encontre rapidamente o que procura e
                 tenha acesso a conteúdos relevantes para seus estudos e pesquisas.
             </p>
+            <div class="mx-auto">
+                <img alt="" src="{{asset('foto-g3.jpeg')}}" class="rounded-lg px-2 lg:w-11/12 sm:w-full h-full mb-4 flex self-end">
+            </div>
         </div>
-
+        <div class="w-full flex justify-center mt-5">
+            <a href="{{ route('subscribe') }}" class="header-link bg-white text-white flex rounded-full mb-20 text-sm lg:text-lg font-semibold bg-red-800 lg:px-10 p-2 lg:px-20">Assine Já! Somente R$ 9,99 mensais</a>
+        </div>
     </div>
 
-
-
 </section>
+
+<!-- Sobre Nós -->
+<section id="funciona" class="flex items-center justify-center lg:px-5 lg:py-20 w-full">
+    <div class="max-w-7xl mx-auto text-center">
+        <h2 class="lg:text-6xl font-bold text-white text-2xl">Sobre Nós</h2>
+        <p class="text-lg lg:text-2xl lg:my-20 lg:px-48 text-white text-justify px-4">
+            Bem-vindo ao Pesquisas Acadêmicas, o seu site de referência para pesquisas acadêmicas e escolares. Oferecemos uma ampla variedade de temas
+            e assuntos comumente solicitados em faculdades, pós-graduação, escolas de ensino médio e concursos públicos.
+        </p>
+        <div class="text-center flex justify-center lg:px-0 px-3">
+            <img alt="" src="{{asset('sobre-nos.png')}}" class="rounded-2xl lg:w-3/4 sm:w-3/4">
+        </div>
+    </div>
+</section>
+<!-- Fim Sobre Nós -->
 
 
 
@@ -219,7 +226,7 @@
         <p class="text-center my-6 text-white sm:w-full">Estamos aqui para ajudar com suas pesquisas acadêmicas</p>
         <p class="text-center text-white mx-auto sm:w-full">vendas.bmsys@gmail.com</p>
 
-        <form action="" method="POST" class="flex flex-wrap sm:w-full lg:w-full w-10/12 mx-auto">
+        <form action="" method="POST" class="flex flex-wrap sm:w-full lg:w-8/12  mx-auto">
             @csrf
             <div class="mb-4 w-full">
                 <label for="email" class="block font-medium text-white">Email:</label>
@@ -234,59 +241,20 @@
     </div>
 </section>
 
-<!-- Projetos de Pesquisa Escolar -->
-<section id="pesquisa" class="flex flex-col items-center lg:py-10 mb-10 py-10 lg:px-5 w-full">
-    <h2 class="text-2xl lg:text-6xl font-bold lg:mt-6 text-center mb-6 text-white">Projetos de Pesquisa Escolar</h2>
-    <div class="flex flex-wrap justify-center w-full">
-        <div class="flex flex-wrap w-full lg:w-1/2 justify-end">
-            <div class="flex flex-col mb-8 justify-end">
-                <img alt="" src="{{asset('foto-g1.jpeg')}}" class="rounded-lg px-2 lg:w-2/3 sm:w-full h-full mb-4 flex self-end">
-                <p class="lg:text-3xl text-white lg:text-right sm:text-center sm:w-full ml-2 lg:ml-0">Site de Pesquisas Acadêmicas</p>
-            </div>
-            <div class="flex flex-col mb-8 justify-end">
-                <img alt="" src="{{asset('foto-g2.jpeg')}}" class="rounded-lg px-2 lg:w-1/2 sm:w-full h-full mb-4 flex self-end">
-                <p class="lg:text-3xl text-white lg:text-right sm:text-center sm:w-full ml-2 lg:ml-0">Exemplo de Projeto de Pesquisa</p>
-            </div>
-        </div>
-        <div class="flex flex-wrap w-full lg:w-1/2">
-            <div class="flex flex-col mb-8 justify-start ml-3">
-                <img alt="" src="{{asset('foto-g3.jpeg')}}" class="rounded-lg lg:w-1/2 sm:w-full h-full mb-4 flex self-start">
-                <p class="lg:text-3xl text-white lg:text-left sm:text-center sm:w-full">Temas de Pesquisa Variados</p>
-            </div>
-            <div class="flex flex-col mb-8 justify-start ml-3">
-                <img alt="" src="{{asset('foto-g4.jpeg')}}" class="rounded-lg lg:w-1/2 sm:w-full h-full mb-4 flex self-start">
-                <p class="lg:text-3xl text-white lg:text-left sm:text-center sm:w-full">Ajuda em Trabalhos Acadêmicos</p>
-            </div>
-        </div>
-    </div>
-    <div class="w-full flex justify-center mt-5">
-        <a href="{{ route('subscribe') }}" class="header-link bg-white text-white flex rounded-full mb-20 text-sm lg:text-lg font-semibold bg-red-800 lg:px-10 p-2 lg:px-20">Assine Já! Somente R$ 9,99 mensais</a>
-    </div>
-</section>
-
-<footer class="flex w-full flex-wrap mt-30 justify-around items-center">
+<footer class="flex w-full flex-wrap mt-30 justify-around items-center bg-white">
 
         <div>
             <div class="footer-widget">
                 <ul class="links">
-                    <li><a href="javascript:void(0)" class="text-white">Home</a></li>
-                    <li><a href="javascript:void(0)" class="text-white">Categorias</a></li>
-                    <li><a href="javascript:void(0)" class="text-white">Sobre</a></li>
-                    <li><a href="javascript:void(0)" class="text-white">Testimonials</a></li>
+                    <li><a href="javascript:void(0)" class="text-gray-950 text-2xl">Home</a></li>
+                    <li><a href="javascript:void(0)" class="text-gray-950 text-2xl">Categorias</a></li>
+                    <li><a href="javascript:void(0)" class="text-gray-950 text-2xl">Sobre</a></li>
+                    <li><a href="javascript:void(0)" class="text-gray-950 text-2xl">Testimonials</a></li>
                 </ul>
             </div>
         </div>
 
-        <div>
-            <div class="footer-widget">
-                <ul class="links">
-                    <li><a href="javascript:void(0)" class="text-white">How it works</a></li>
-                    <li><a href="javascript:void(0)" class="text-white">Privacy policy</a></li>
-                    <li><a href="javascript:void(0)" class="text-white">Terms of service</a></li>
-                    <li><a href="javascript:void(0)" class="text-white">Refund policy</a></li>
-                </ul>
-            </div>
-        </div>
+
 
     <div>
         <div class="mb-30">
