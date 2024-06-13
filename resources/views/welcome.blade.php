@@ -55,7 +55,7 @@
 </header>
 
 <!-- Hero Section -->
-<main class="text-white flex items-center justify-around lg:h-screen w-full px-5 lg:px-52" id="hero">
+<main class="text-white flex items-center justify-around lg:h-screen w-full px-5 lg:px-52 my-8 lg:sm-0" id="hero">
     <div class="flex flex-col-reverse lg:flex-row items-center h-full w-full">
         <div class="flex flex-col w-full lg:w-1/3 mb-5 lg:mb-0">
             <h5 class="text-2xl lg:text-6xl font-bold mb-1 lg:mb-4">
@@ -220,7 +220,7 @@
 
 
 
-<section id="contato" class="flex justify-center lg:py-20 sm:w-full lg:px-96">
+<section id="contato" class="flex justify-center lg:py-20 mx-auto w-11/12 lg:mx-0 lg:px-96 mb-10 lg:mb-0">
     <div class="flex flex-wrap w-full">
         <h2 class="lg:text-6xl text-2xl font-bold text-center text-white sm:w-full mx-auto">Entre em Contato</h2>
         <p class="text-center my-6 text-white sm:w-full">Estamos aqui para ajudar com suas pesquisas acadêmicas</p>
