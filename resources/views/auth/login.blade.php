@@ -3,20 +3,20 @@
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
     <section class="flex w-full justify-center items-center">
-        <div class="p-5 text-white rounded-lg bg-gray-100" style="width:380px;">
-            <h3 class="text-lg font-bold text-gray-950 my-5" style="font-family: 'Nunito Sans';font-size:2em;color:black;">Olá!</h3>
+        <div class="p-2 text-white rounded-lg bg-gray-100" style="width:380px;">
+            <img src="{{asset('logo_vetormenor1.png')}}" class="mx-auto my-2" alt="">
             <form method="POST" action="{{ route('login') }}">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                 <div class="mb-2">
-                    <label for="email" class="block mb-1 font-medium text-gray-950 dark:text-white text-lg" style="color:black;">Email</label>
+                    <label for="email" class="block mb-1 font-medium text-gray-950 dark:text-white text-sm" style="color:black;">Email</label>
                     <input type="email" name="email" id="email" style="color:black;" class="bg-gray-50 border border-gray-300 text-gray-950 text-sm block w-full p-2.5 focus:border-transparent focus:ring-0 focus:outline-none rounded-lg" required />
                     <x-input-error :messages="$errors->get('email')" class="mt-2" />
                 </div>
                 <div class="mb-2">
-                    <label for="password" class="block mb-1 font-medium dark:text-white text-lg text-gray-950" style="color:black;">Senha</label>
+                    <label for="password" class="block mb-1 font-medium dark:text-white text-sm text-gray-950" style="color:black;">Senha</label>
                     <div class="relative">
                         <input type="password" name="password" id="password" style="color:black;" class="bg-gray-50 border text-gray-950 border-gray-300 text-sm block w-full p-2.5 focus:border-transparent focus:ring-0 focus:outline-none rounded-lg" required />
-                        <button type="button" id="togglePassword" class="absolute right-2 top-2 text-gray-950 cursor-pointer">
+                        <button type="button" id="togglePassword" class="absolute right-2 top-2 cursor-pointer" style="color:black;">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" id="showIcon">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
@@ -29,12 +29,29 @@
                     <x-input-error :messages="$errors->get('password')" class="mt-2" />
                 </div>
 
-                <button type="submit" class="bg-white focus:outline-none font-medium mt-2 text-2xl w-full px-5 py-2.5 text-center focus:border-transparent focus:ring-0 focus:outline-none rounded-lg text-gray-950" style="color:black;">Logar-se</button>
+                <div class="flex justify-between">
+                    <div>
+                        <input type="checkbox" class="text-gray-950">
+                        <span style="color:black;" class="text-sm">Lembrar-me</span>
+                    </div>
+                    <div>
+                        <a href="" style="color:black;text-decoration: underline;" class="text-sm">Esqueceu a Senha?</a>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="mx-auto my-5 w-full flex justify-center">
+                    <button type="submit" style="background-color: rgb(9, 116, 122);color:white;margin:0 auto;" class="focus:outline-none font-medium mt-2 text-lg w-2/3 px-5 py-2 text-center focus:border-transparent focus:ring-0 focus:outline-none rounded-lg text-gray-950">LOGIN</button>
+                </div>
+
             </form>
 
-            <div class="flex justify-end mt-2 items-center">
-                <span class="text-gray-950" style="color:black;">Não é cadastrado &nbsp;</span>
-                <a href="{{route('register')}}" class="bg-blue-500 text-white p-2 rounded-lg"> Cadastra-se</a>
+            <div class="flex justify-center">
+
+                <a href="{{route('register')}}" class="p-2 rounded-lg text-sm" style="color: #1a202c;border:1px solid black;"> CRIAR CONTA</a>
             </div>
 
 

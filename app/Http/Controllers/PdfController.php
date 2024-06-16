@@ -16,8 +16,6 @@ class PdfController extends Controller
         ]);
     }
 
-
-
     public function upload(Request $request)
     {
         $validacao = $request->validate([
@@ -38,11 +36,8 @@ class PdfController extends Controller
             'descricao.max' => 'A descrição não pode ter mais de 300 caracteres.',
         ]);
 
-
-
         if ($request->file('pdf')->isValid()) {
             $pdfPath = $request->file('pdf')->store('pdfs','public');
-
             $pdf = new Pdf();
             $pdf->categoria_id = $request->categoria_id;
             $pdf->titulo = $request->titulo;

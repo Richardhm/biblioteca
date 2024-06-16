@@ -18,6 +18,9 @@ export default {
                 '30p': '30%',
                 '70p': '70%', // Adicione esta linha para a largura de 70%
             },
+            height: {
+                'screen-minus-200': '100vh',
+            }
         },
     },
 

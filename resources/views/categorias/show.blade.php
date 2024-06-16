@@ -1,36 +1,36 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight text-center text-white">{{ $categoria->nome }}</h2>
-    </x-slot>
+
     @if(count($pdfs) >= 1)
-        <div class="py-12">
+
+        <div class="py-2">
             <div class="max-w-12xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                    <div class="p-6 text-gray-900 dark:text-gray-100">
-                        <h3 class="text-lg font-semibold mb-4">Categoria {{ $categoria->nome }} <small>Os PDF aqui servem como referencia.</small> </h3>
-                        <div class="grid grid-cols-7 gap-6">
+                <div class="dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                    <div class="p-5 text-gray-900 dark:text-gray-100">
+                        <div class="grid grid-cols-5 gap-2">
                             @foreach($pdfs as $pdf)
-                                <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                                    <div class="p-5">
-                                        <a href="#">
-                                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ $pdf->titulo }}</h5>
-                                        </a>
-                                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                                @if($loop->iteration == 1)
+                                    <div style="display: flex;align-items: center;width:55%;margin: 0 auto;">
+                                        <img src="{{ asset('storage/' . $categoria->capa) }}" style="width:115px;height:157px;border-radius:10px;position:relative;top:0;left:30px;">
+                                    </div>
+                                @endif
+                                <div style="max-height: 152px;min-height: 152px;" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-between">
+                                    <div class="p-2 flex-grow">
+
+                                        <h5 class="mb-2 h-8 text-sm font-bold tracking-tight text-gray-900 dark:text-white text-justify" style="line-height: 1;">{{ $pdf->titulo }}</h5>
+
+                                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-sm text-justify" style="line-height: 1;">
                                             {{ implode(' ', array_slice(explode(' ', $pdf->descricao ?? ''), 0, 20)) }}{{ str_word_count($pdf->descricao) > 20 ? '...' : '' }}
                                         </p>
-                                        @if(\Illuminate\Support\Facades\Auth::user()->subscribed('default'))
-                                            <a href="{{ Storage::url($pdf->pdf) }}" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                                Download
-                                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                    </div>
+                                    @if(\Illuminate\Support\Facades\Auth::user()->subscribed('default'))
+                                        <div class="w-full flex justify-end items-end mt-auto">
+                                            <a href="{{ Storage::url($pdf->pdf) }}" class="inline-flex items-center px-1 text-sm font-medium text-center text-white bg-white rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 flex self-end">
+                                                <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 15v2a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-2m-8 1V4m0 12-4-4m4 4 4-4"/>
                                                 </svg>
                                             </a>
-                                        @else
-                                            <a href="{{route('subscribe')}}" style="margin-left:20px;text-color:white;display:flex;align-items: center;">
-                                                <span style="border:1px solid black;padding:0 10px;border-radius: 5px;background-color:#123449;color:white;">Assinatura</span>
-                                            </a>
-                                        @endif
-                                    </div>
+                                        </div>
+                                    @endif
                                 </div>
                             @endforeach
                         </div>
