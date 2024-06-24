@@ -6,6 +6,7 @@ use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\PdfController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SubscribeController;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -22,6 +23,10 @@ Route::post('/pdf/upload', [PdfController::class, 'upload'])->name('pdf.upload')
 Route::get("/pdf",[PdfController::class, 'index'])->middleware(['auth', 'verified'])->name('pdf');
 Route::get('/dashboard', [DashboardController::class,'index'])->middleware(['auth', 'verified'])->name('home');
 Route::get('/subscribe',[SubscribeController::class,'index'])->name('subscribe')->middleware(\Illuminate\Auth\Middleware\Authenticate::class);
+
+Route::post('/email',[ContactController::class,'store'])->name('send.email');
+
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
